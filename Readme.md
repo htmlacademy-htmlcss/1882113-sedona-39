@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Nikolay Elisanov](https://up.htmlacademy.ru/htmlcss/39/user/1882113).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Ермолаев](https://htmlacademy.ru/profile/id128353).
 
 ---
 
