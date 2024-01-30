@@ -2,6 +2,7 @@
 
 * Студент: [Nikolay Elisanov](https://up.htmlacademy.ru/htmlcss/39/user/1882113).
 * Наставник: [Владислав Ермолаев](https://htmlacademy.ru/profile/id128353).
+* Сайт: [Мой проект Sedona](https://homersimpsonj.github.io/1882113-sedona-39/).
 
 ---
 
