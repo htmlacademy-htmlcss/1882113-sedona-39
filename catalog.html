@@ -5,6 +5,87 @@
   <title>Гостиницы каталог</title>
 </head>
 <body>
+  <header class="catalog-header">
+    <nav class="navigation">
+      <img src="#" alt="Логотип Седона">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Главная</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">О седоне</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link current" href="catalog.html">Гостиницы</a>
+        </li>
+      </ul>
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item">
+          <a class="navigation-link current" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">Избранное</span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">Хочу сюда</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
+  <main class="main-catalog">
+    <h1 class="main-title">Гостиницы Седоны</h1>
+    <ul class="breadcrumbs-list">
+      <li class="breadcrumbs-item">
+        <a title="Вы находитесь тут">Гостиницы</a>
+      </li>
+    </ul>
+    <form class="catalog-form-filter" action="https://echo.htmlacademy.ru/" method="get">
+      <fieldset class="form-group">
+        <legend class="form-name">Инфраструктура:</legend>
+        <label>
+          <input type="checkbox" name="Бассейн" checked>
+          Бассейн
+        </label>
+        <label>
+          <input type="checkbox" name="Парковка" checked>
+          Парковка
+        </label>
+        <label>
+          <input type="checkbox" name="Wi-Fi">
+          Wi-Fi
+        </label>
+      </fieldset>
+      <fieldset class="form-group">
+        <legend class="form-name">Тип жилья:</legend>
+        <label>
+          <input type="radio" value="hotel" name="type-bilding" checked>
+          Гостиница
+        </label>
+        <label>
+          <input type="radio" value="motel" name="type-bilding">
+          Мотель
+        </label>
+        <label>
+          <input type="radio" value="appartement" name="type-bilding">
+          Апартаменты
+        </label>
+      </fieldset>
+      <fieldset class="form-group">
+        <legend class="form-name">Стоимость, ₽:</legend>
+        <input type="number" name="price from" value="0">
+        <input type="number" name="price before" value="9000">
+        <input type="range" mim="0" max="9000" step="1" value="0">
+      </fieldset>
+      <button type="submit">Применить</button>
+      <button type="reset">Сбросить</button>
+    </form>
+  </main>
 </body>
 </html>
