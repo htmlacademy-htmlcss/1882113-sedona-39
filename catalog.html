@@ -30,12 +30,8 @@
             <span class="visually-hidden">Избранное</span>
           </a>
         </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <span class="visually-hidden">Хочу сюда</span>
-          </a>
-        </li>
       </ul>
+      <a href="#" class="user-link">Хочу сюда!</a>
     </nav>
   </header>
 
@@ -43,41 +39,60 @@
   <main class="main-catalog">
     <section class="catalog-filter">
       <h1 class="filter-title">Гостиницы Седоны</h1>
-      <ul class="breadcrumbs-list">
+      <ol class="breadcrumbs-list">
+        <li class="breadcrumbs-item">
+          <a title="Вы находитесь тут"></a>
+        </li>
         <li class="breadcrumbs-item">
           <a title="Вы находитесь тут">Гостиницы</a>
         </li>
-      </ul>
+      </ol>
       <form class="catalog-form-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="form-group">
           <legend class="form-name">Инфраструктура:</legend>
-          <label>
-            <input type="checkbox" name="Бассейн" checked>
-            Бассейн
-          </label>
-          <label>
-            <input type="checkbox" name="Парковка" checked>
-            Парковка
-          </label>
-          <label>
-            <input type="checkbox" name="Wi-Fi">
-            Wi-Fi
-          </label>
+          <ul class="form-infrastructure-list">
+            <li class="form-infrastructure-item">
+              <label>
+                <input type="checkbox" name="Бассейн" checked>
+                Бассейн
+              </label>
+            </li>
+            <li class="form-infrastructure-item">
+              <label>
+                <input type="checkbox" name="Парковка" checked>
+                Парковка
+              </label>
+            </li>
+            <li class="form-infrastructure-item">
+              <label>
+              <input type="checkbox" name="Wi-Fi">
+              Wi-Fi
+              </label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="form-group">
           <legend class="form-name">Тип жилья:</legend>
-          <label>
-            <input type="radio" value="hotel" name="type-bilding" checked>
-            Гостиница
-          </label>
-          <label>
-            <input type="radio" value="motel" name="type-bilding">
-            Мотель
-          </label>
-          <label>
-            <input type="radio" value="appartement" name="type-bilding">
-            Апартаменты
-          </label>
+          <ul class="form-bilding-list">
+            <li class="form-bilding-item">
+              <label>
+                <input type="radio" value="hotel" name="type-bilding" checked>
+                Гостиница
+              </label>
+            </li>
+            <li class="form-bilding-item">
+              <label>
+                <input type="radio" value="motel" name="type-bilding">
+                Мотель
+              </label>
+            </li>
+            <li class="form-bilding-item">
+              <label>
+                <input type="radio" value="appartement" name="type-bilding">
+                  Апартаменты
+              </label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="form-group">
           <legend class="form-name">Стоимость, ₽:</legend>
@@ -109,8 +124,12 @@
       </ul>
       <ul class="cards-list">
         <li class="cards-item">
-          <img class="cards-photo" src="#" alt="Превью отеля"></img>
-          <h3 class="cards-title">Amara Resort & Spa</h3>
+          <a class="cards-photo-link" href="#">
+            <img class="cards-photo" src="#" alt="Превью отеля"></img>
+          </a>
+          <a class="cards-title-link" href="#">
+            <h3 class="cards-title">Amara Resort & Spa</h3>
+          </a>
           <dl class="cards-price">
             <dt>Гостиница</dt>
             <dd>От 4000 ₽</dd>
@@ -126,8 +145,12 @@
           <span class="rating-ball">Рейтинг: 8,5</span>
         </li>
         <li class="cards-item">
-          <img class="cards-photo" src="#" alt="Превью отеля"></img>
-          <h3 class="cards-title">Villas at Poco Diablo</h3>
+          <a class="cards-photo-link" href="#">
+            <img class="cards-photo" src="#" alt="Превью отеля"></img>
+          </a>
+          <a class="cards-title-link" href="#">
+            <h3 class="cards-title">Villas at Poco Diablo</h3>
+          </a>
           <dl class="cards-price">
             <dt>Гостиница</dt>
             <dd>От 5000 ₽</dd>
@@ -143,8 +166,12 @@
           <span class="rating-ball">Рейтинг: 9,2</span>
         </li>
         <li class="cards-item">
-          <img class="cards-photo" src="#" alt="Превью отеля"></img>
-          <h3 class="cards-title">Desert Quail Inn</h3>
+          <a class="cards-photo-link" href="#">
+            <img class="cards-photo" src="#" alt="Превью отеля"></img>
+          </a>
+          <a class="cards-title-link" href="#">
+            <h3 class="cards-title">Desert Quail Inn</h3>
+          </a>
           <dl class="cards-price">
             <dt>Гостиница</dt>
             <dd>От 2500 ₽</dd>
@@ -156,11 +183,15 @@
             <img src="#" alt="звезда">
             <img src="#" alt="звезда">
           </div>
-          <span class="rating-ball">Рейтинг: 8,5</span>
+          <span class="rating-ball">Рейтинг: 6,9</span>
         </li>
         <li class="cards-item">
-          <img class="cards-photo" src="#" alt="Превью отеля"></img>
-          <h3 class="cards-title">GreenTree Inn</h3>
+          <a class="cards-photo-link" href="#">
+            <img class="cards-photo" src="#" alt="Превью отеля"></img>
+          </a>
+          <a class="cards-title-link" href="#">
+            <h3 class="cards-title">GreenTree Inn</h3>
+          </a>
           <dl class="cards-price">
             <dt>Гостиница</dt>
             <dd>От 1500 ₽</dd>
@@ -173,6 +204,8 @@
           </div>
           <span class="rating-ball">Рейтинг: 5,0</span>
         </li>
+
+
       </ul>
       <ul class="pagination">
         <li calss="pagination-item">
@@ -186,6 +219,9 @@
         </li>
         <li calss="pagination-item">
           <a class="pagination-link" href="#">4</a>
+        </li>
+        <li calss="pagination-item">
+          <a class="pagination-link" href="#">...</a>
         </li>
         <li calss="pagination-item">
           <a class="pagination-link" href="#">10</a>
