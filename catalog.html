@@ -50,10 +50,10 @@
       <h1 class="filter-title">Гостиницы Седоны</h1>
       <ol class="breadcrumbs-list">
         <li class="breadcrumbs-item">
-          <a href="#"></a>
+          <a href="index.html">На главную страницу</a>
         </li>
         <li class="breadcrumbs-item">
-          <span title="Вы находитесь тут">Гостиницы</span>
+          <a title="Вы находитесь тут">Гостиницы</a>
         </li>
       </ol>
       <form class="catalog-form-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -61,21 +61,21 @@
           <legend class="form-name">Инфраструктура:</legend>
           <ul class="form-infrastructure-list">
             <li class="form-infrastructure-item">
-              <label>
-                <input type="checkbox" name="Бассейн" checked>
+              <label for="pool">
+                <input type="checkbox" name="Бассейн" id="pool" checked>
                 Бассейн
               </label>
             </li>
             <li class="form-infrastructure-item">
-              <label>
-                <input type="checkbox" name="Парковка" checked>
+              <label for="parking">
+                <input type="checkbox" name="Парковка" id="parking" checked>
                 Парковка
               </label>
             </li>
             <li class="form-infrastructure-item">
-              <label>
-              <input type="checkbox" name="Wi-Fi">
-              Wi-Fi
+              <label for="wi-fi">
+                <input type="checkbox" id="wi-fi" name="Wi-Fi">
+                Wi-Fi
               </label>
             </li>
           </ul>
@@ -84,20 +84,20 @@
           <legend class="form-name">Тип жилья:</legend>
           <ul class="form-bilding-list">
             <li class="form-bilding-item">
-              <label>
-                <input type="radio" value="hotel" name="type-bilding" checked>
+              <label for="hotel">
+                <input type="radio" value="hotel" name="type-bilding" id="hotel" checked>
                 Гостиница
               </label>
             </li>
             <li class="form-bilding-item">
-              <label>
-                <input type="radio" value="motel" name="type-bilding">
+              <label for="motel">
+                <input type="radio" value="motel" name="type-bilding" id="motel">
                 Мотель
               </label>
             </li>
             <li class="form-bilding-item">
-              <label>
-                <input type="radio" value="appartement" name="type-bilding">
+              <label for="appartament">
+                <input type="radio" value="appartement" name="type-bilding" id="appartament">
                   Апартаменты
               </label>
             </li>
@@ -105,8 +105,8 @@
         </fieldset>
         <fieldset class="form-group">
           <legend class="form-name">Стоимость, ₽:</legend>
-          <input type="number" name="price from" value="0">
-          <input type="number" name="price before" value="9000">
+          <input type="number" name="price from" value="0" placeholder="0">
+          <input type="number" name="price before" value="9000" placeholder="9000">
           <input type="range" min="0" max="9000" step="1" value="0">
         </fieldset>
         <div class="form-actions-button">
@@ -125,7 +125,7 @@
             <option value="first-richer">Сначала дорогие</option>
           </select>
           <ul class="button-view-list">
-            <li class="button-view-item">
+            <li class="button-view-item  button-view-selected">
               <a class="view-item-link" href="#">Плитка</a>
             </li>
             <li class="button-view-item">

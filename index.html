@@ -32,6 +32,7 @@
             <li class="user-actions-item">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">Избранное</span>
+                <span class="likes-number">12</span>
               </a>
             </li>
             <li class="user-actions-item">
@@ -121,7 +122,8 @@
         <h2 class="subscrible-title">Подпишитесь на рассылку</h2>
         <p class="subscrible-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscrible-form" action="https://echo.htmlacademy.ru/" method="get">
-          <input type="email" name="email" placeholder="Ваш e-mail">
+          <label class="visually-hidden" for="email-subscrible">Укажите ваш email</label>
+          <input type="email" name="email" id="email-subscrible" placeholder="Ваш e-mail">
           <button type="submit">Подписаться</button>
         </form>
       </section>
@@ -129,24 +131,24 @@
 
     <!-- Подвал -->
     <footer class="footer">
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
+      <ul class="social-list">
+        <li class="social-item">
           <a href="https://vk.com/htmlacademy" class="footer-social-link">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
-        <li class="footer-social-item">
+        <li class="social-item">
           <a href="https://t.me/htmlacademy " class="footer-social-link">
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
-        <li class="footer-social-item">
+        <li class="social-item">
           <a href="https://www.youtube.com/user/htmlacademyru" class="footer-social-link">
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
       </ul>
-      <a href="tel:+78128121212" class="footer-phone-link">+7 (812) 812-12-12</a>
+      <a href="tel:+78128121212" class="phone-link">+7 (812) 812-12-12</a>
       <a href="https://htmlacademy.ru/" class="footer-logo-link">
         <img src="images/logo-footer.svg" width="115" height="33" alt="Логотип htmlacademy">
       </a>
