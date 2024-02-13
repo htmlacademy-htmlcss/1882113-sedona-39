@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -15,7 +16,7 @@
               <a class="navigation-link current" href="#">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">О седоне</a>
+              <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
@@ -32,11 +33,11 @@
             <li class="user-actions-item">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">Избранное</span>
-                <span class="likes-number">12</span>
+                <span class="quantity-likes">12</span>
               </a>
             </li>
             <li class="user-actions-item">
-              <a href="#" class="user-link">Хочу сюда!</a>
+              <a href="#" class="user-button">Хочу сюда!</a>
             </li>
           </ul>
         </div>
@@ -53,12 +54,12 @@
       <section class="advantages">
         <h2 class="visually-hidden">Приемущества</h2>
         <div class="advantages-description-wraper">
-          <p class="advantages-description-bold">Седона — небольшой городок в Аризоне,
+          <p class="section-title">Седона — небольшой городок в Аризоне,
           заслуживающий большего!</p>
-          <p class="hero-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <p class="section-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
         <ul class="advantages-list">
-          <li class="advantages-item advantages-background-color">
+          <li class="advantages-item advantages-background">
             <div class="advantages-wraper">
               <h3 class="advantages-title">Настоящий городок</h3>
               <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
@@ -71,7 +72,7 @@
               <p class="advantages-description">Все достопримечательности находятся очень близко</p>
             </div>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item background-modified">
             <div class="advantages-wraper">
               <h3 class="advantages-title">Красивая дорога</h3>
               <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
@@ -83,7 +84,7 @@
               <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
             </div>
           </li>
-          <li class="advantages-item advantages-background-color">
+          <li class="advantages-item advantages-background">
             <div class="advantages-wraper">
               <h3 class="advantages-title">Там есть мост дьявола</h3>
               <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -92,39 +93,39 @@
           </li>
         </ul>
         <div class="advantages-invitation-wraper">
-          <p class="advantages-invitation-bold">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-          <p class="advantages-invitation">Опытный персонал и качественное обслуживание!</p>
+          <p class="section-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+          <p class="section-description">Опытный персонал и качественное обслуживание!</p>
         </div>
         <ul class="advantages-invitation-list">
-          <li class="advantages-invitation-item">
-            <h3 class="advantages-invitation-title">Жильё</h3>
-            <p class="advantages-invitation-descriptions">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          <li class="advantages-invitation-item background-modified">
+            <h3 class="advantages-title">Жильё</h3>
+            <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="advantages-invitation-item">
-            <h3 class="advantages-invitation-title">Еда</h3>
-            <p class="advantages-invitation-descriptions">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            <h3 class="advantages-title">Еда</h3>
+            <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="advantages-invitation-item">
-            <h3 class="advantages-invitation-title">Сувениры</h3>
-            <p class="advantages-invitation-descriptions">Не только китайского,но и настоящего местного производства!</p>
+          <li class="advantages-invitation-item background-modified">
+            <h3 class="advantages-title">Сувениры</h3>
+            <p class="advantages-description">Не только китайского,но и настоящего местного производства!</p>
           </li>
         </ul>
       </section>
       <!-- Блок поиск отеля -->
       <section class="search-hotel">
-        <h2 class="visually-hidden">Поиск отеля</h2>
-        <p class="search-title"><b>Заинтересовались?</b></p>
-        <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+        <p class="section-title">Заинтересовались?</p>
+        <p class="section-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a href="catalog.html" class="search-link">Поиск гостиницы в Седоне</a>
       </section>
       <!-- Блок подписки -->
-      <section class="subscrible">
-        <h2 class="subscrible-title">Подпишитесь на рассылку</h2>
-        <p class="subscrible-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscrible-form" action="https://echo.htmlacademy.ru/" method="get">
+      <section class="subscrible background">
+        <h2 class="section-title">Подпишитесь на рассылку</h2>
+        <p class="section-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscrible-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="email-subscrible">Укажите ваш email</label>
-          <input type="email" name="email" id="email-subscrible" placeholder="Ваш e-mail">
-          <button type="submit">Подписаться</button>
+          <input type="email" class="input-email" name="email" id="email-subscrible" placeholder="Ваш e-mail">
+          <button type="submit" class="subscrible-button">Подписаться</button>
         </form>
       </section>
     </main>

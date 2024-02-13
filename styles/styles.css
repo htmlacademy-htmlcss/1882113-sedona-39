@@ -1,0 +1,307 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* header */
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+
+  color: #000;
+  text-decoration: none;
+}
+
+.user-button {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #756157;
+
+  padding: 8px 50px;
+  border-radius: 4px;
+
+  color: #fff;
+  text-decoration: none;
+}
+
+.quantity-likes {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  color: #fff;
+
+  padding: 5px 5px 4px;
+  background-color: #7DB54F;
+  border-radius: 50%;
+}
+
+/* section hero */
+
+.hero {
+  background-image: url("../images/index_background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #82B3D3;
+}
+
+/* section */
+
+.section-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+/* advantages */
+
+.advantages-item {
+  background-color: #83B3D31F;
+}
+
+.advantages-background {
+  color: #fff;
+  background-color: #82B3D3;
+}
+
+.advantages-background .advantages-description {
+  color: #fff;
+}
+
+.background-modified {
+  background-color: #83B3D333;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333;
+}
+
+/* search hotel */
+
+.search-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  padding: 8px 50px;
+  border-radius: 4px;
+
+  color: #fff;
+  text-decoration: none;
+  background-color: #756157;
+}
+
+/* subscrible-section */
+
+.subscrible {
+  background-color: #82B3D3;
+  background-size: 100% auto;
+
+  color: #fff;
+}
+
+.subscrible.background {
+  background-image: url(../images/Subscribe_background.jpg);
+}
+
+.subscrible-button {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #fff;
+
+  background-color: #82B3D3;
+  border: none;
+  padding: 8px 50px;
+}
+
+/* footer */
+
+.phone-link {
+  font-size: 40px;
+  line-height: 40px;
+
+  color:#000;
+  text-decoration: none;
+}
+
+/* catalog */
+
+/* main */
+
+/* filter */
+.catalog-filter {
+  background-color: #82B3D3;
+  background-image: url(../images/filter_background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  color: #fff;
+}
+
+.filter-title {
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs-list {
+  font-size: 16px;
+}
+
+.form-name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.label-text {
+  line-height: 23px;
+}
+
+.filter-button-submit {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #82B3D3;
+
+  border: none;
+  border-radius: 4px;
+  padding: 8px 50px;
+}
+
+.filter-button-reset {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0);
+
+  border: none;
+  border-radius: 4px;
+  padding: 8px 50px;
+}
+
+/* catalog-cards */
+
+.catalog-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.cards-title-link {
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #000;
+  text-decoration: none;
+}
+
+.read-more {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  background-color: #756157;
+  padding: 8px 50px;
+  border-radius: 4px;
+}
+
+.favourites {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  background-color: #82B3D3;
+  padding: 8px 50px;
+  border-radius: 4px;
+}
+
+.favourites.current {
+  background-color: #7DB54F;
+}
+
+.rating-ball {
+  font-size: 16px;
+  line-height: 20px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* pagination */
+
+.pagination {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.pagination-link {
+  color: #fff;
+  background-color: #82B3D3;
+  text-decoration: none;
+}
+
+.pagination-link.current {
+  color: #000;
+  background-color: #F2F2F2;
+}
+
+.pagination-link.dotted {
+  color: #000;
+  background-color: #fff;
+}
+
+/* subscrible */
+
+.subscrible-catalog {
+  color: #000;
+  background-color: #fff;
+}
