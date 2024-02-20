@@ -37,6 +37,7 @@ body {
   min-height: 100%;
 
   background-color: #ffffff;
+  filter: drop-shadow(0 0 15px rgba(0,0,0,0.2));
   display: flex;
   flex-direction: column;
 }
@@ -109,9 +110,10 @@ body {
 
 .hero {
   background-image: url("../images/index_background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #82B3D3;
+  clip-path: polygon(50% 0%, 100% 0, 100% 88%, 79% 94%, 79% 89%, 50% 100%, 21% 89%, 21% 94%, 0 88%, 0 0);
 }
 
 .welcome-image {
