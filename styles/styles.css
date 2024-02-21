@@ -121,7 +121,7 @@ body {
   margin: 0 auto;
 }
 
-/* section advantages */
+/* sections advantages */
 
 .advantages-description-wraper {
   width: 651px;
@@ -140,7 +140,7 @@ body {
   line-height: 26px;
 }
 
-/* advantages */
+/* advantages second */
 
 .advantages-list {
   margin: 0;
@@ -229,6 +229,8 @@ body {
 
 .subscrible.background {
   background-image: url(../images/Subscribe_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .subscrible-wraper {
@@ -238,6 +240,10 @@ body {
 
 .input-email {
   font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  background-color: #fff;
 }
 
 .input-email::placeholder {
@@ -251,7 +257,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #fff;
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   background-color: #82B3D3;
   border: none;
   padding: 8px 50px;
@@ -296,8 +302,8 @@ body {
 .catalog-filter {
   background-color: #82B3D3;
   background-image: url(../images/filter_background.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: 100% auto;
 
   color: #fff;
 }
@@ -370,7 +376,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   background-color: #82B3D3;
-
+  font-family: inherit;
   border: none;
   border-radius: 4px;
   padding: 8px 50px;
@@ -383,7 +389,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   background-color: rgba(255, 255, 255, 0);
-
+  font-family: inherit;
   border: none;
   border-radius: 4px;
   padding: 8px 50px;
@@ -393,9 +399,13 @@ body {
 
 /* catalog cards filter */
 
-.filter-price {
+.filter-sorting {
   font-family: "PT Sans", sans-serif;
   color: #333;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 .catalog-cards {
@@ -416,6 +426,8 @@ body {
   line-height: 36px;
   text-transform: uppercase;
 }
+
+/* cards */
 
 .cards-title-link {
   font-size: 24px;
@@ -484,7 +496,7 @@ body {
   background-color: #fff;
 }
 
-/* subscrible */
+/* subscrible catalog */
 
 .subscrible-catalog {
   color: #000;
