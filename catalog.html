@@ -26,24 +26,23 @@
             </li>
           </ul>
         </div>
-        <div class="user-actions-wraper">
-          <ul class="user-actions">
-            <li class="user-actions-item">
-              <a class="navigation-link current" href="#">
-                <span class="visually-hidden">Поиск</span>
-              </a>
-            </li>
-            <li class="user-actions-item">
-              <a class="navigation-link" href="#">
-                <span class="visually-hidden">Избранное</span>
-                <span class="quantity-likes">12</span>
-              </a>
-            </li>
-            <li class="user-actions-item">
-              <a href="#" class="user-button">Хочу сюда!</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="user-actions-list">
+          <li class="user-actions-item">
+            <a class="user-navigation-link current" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="user-actions-item">
+            <a class="user-navigation-link" href="#">
+              <span class="visually-hidden">Избранное</span>
+              <span class="quantity-likes">12</span>
+            </a>
+          </li>
+          <li class="user-actions-item">
+            <a href="#" class="user-button">Хочу сюда!</a>
+          </li>
+        </ul>
+
       </nav>
     </header>
 
@@ -108,8 +107,10 @@
           </fieldset>
           <fieldset class="form-group-price">
             <legend class="form-name">Стоимость, ₽:</legend>
-            <input type="number" name="price from" value="0" placeholder="0">
-            <input type="number" name="price before" value="9000" placeholder="9000">
+            <div class="price-input-wraper">
+              <input class="price-input-min" type="number" name="price from" value="0" placeholder="0">
+              <input class="price-input-max" type="number" name="price before" value="9000" placeholder="9000">
+            </div>
             <input type="range" min="0" max="9000" step="1" value="0">
           </fieldset>
           <div class="form-actions-button">
