@@ -42,7 +42,7 @@ body {
   flex-direction: column;
 }
 
-.visually-hidden {
+ .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -73,7 +73,7 @@ body {
 }
 
 .navigation-site-wraper img {
-  margin-bottom: -7px;
+  margin-bottom: -6px;
   z-index: 1;
 }
 
@@ -664,6 +664,11 @@ body {
 .favourites.current {
   background-color: #7DB54F;
   padding: 8px 18px;
+}
+
+.hotel-rating {
+  display: flex;
+  justify-content: space-between;
 }
 
 .rating-ball {
