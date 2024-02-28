@@ -94,6 +94,15 @@ body {
   padding: 20px 16px;
   color: #000;
   text-decoration: none;
+  position: relative;
+}
+
+.navigation-link.current {
+  text-decoration: underline;
+  text-underline-offset: 24px;
+  text-decoration-color: #756257;
+  text-decoration-thickness: 2px;
+  z-index: 1;
 }
 
 .user-actions-list {
