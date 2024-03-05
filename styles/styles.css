@@ -42,7 +42,7 @@ body {
   flex-direction: column;
 }
 
-.visually-hidden {
+ .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -67,13 +67,13 @@ body {
 }
 
 .navigation-site-wraper {
-
   display: flex;
   width: 600px;
+  gap: 28px;
 }
 
 .navigation-site-wraper img {
-  margin-bottom: -7px;
+  margin-bottom: -6px;
   z-index: 1;
 }
 
@@ -94,6 +94,15 @@ body {
   padding: 20px 16px;
   color: #000;
   text-decoration: none;
+  position: relative;
+}
+
+.navigation-link.current {
+  text-decoration: underline;
+  text-underline-offset: 24px;
+  text-decoration-color: #756257;
+  text-decoration-thickness: 2px;
+  z-index: 1;
 }
 
 .user-actions-list {
@@ -205,12 +214,18 @@ body {
 }
 
 .advantages-wraper {
-  margin: 103px 85px;
+  display: flex;
+  flex-direction: column;
+  padding: 103px 85px;
 
 }
 
 .advantages-background .advantages-description {
   color: #fff;
+}
+
+.advantages-background img {
+  margin: auto;
 }
 
 .advantages-invitation-list {
@@ -226,7 +241,7 @@ body {
 }
 
 .invitation-item-wraper {
-  margin: 80px 85px;
+  padding: 80px 85px;
 }
 
 .invitation-item-wraper .advantages-title {
@@ -322,7 +337,8 @@ body {
   display: block;
   width: 452px;
   height: 52px;
-  background-color: #fff;
+  border: none;
+  background-color: #f2f2f2;
 }
 
 .input-email::placeholder {
@@ -384,22 +400,34 @@ body {
 /* main */
 
 /* filter */
+
+.logo-link {
+  margin-bottom: -7px;
+}
+
 .catalog-filter {
   background-color: #82B3D3;
   background-image: url(../images/filter_background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-
   color: #fff;
+  padding: 35px 70px 70px;
 }
 
 .filter-title {
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .breadcrumbs-list {
+  display: flex;
   font-size: 16px;
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
 }
 
 .catalog-form-filter {
@@ -438,14 +466,22 @@ body {
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
+  margin-bottom: 32px;
 }
 
 .form-infrastructure-list {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
+.form-infrastructure-item:not(:last-child),
+.form-bilding-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
 .form-bilding-list {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -453,6 +489,29 @@ body {
 .label-text {
   line-height: 23px;
 }
+
+.price-input-wraper {
+  display: flex;
+  margin-bottom: 36px;
+}
+
+.price-input-min,
+.price-input-max {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  width: 143px;
+  height: 48px;
+  background-color: #fff;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* .price-input-min::placeholder,
+.price-input-max::placeholder {
+
+} */
 
 .filter-button-submit {
   font-size: 16px;
@@ -464,6 +523,8 @@ body {
   font-family: inherit;
   border: none;
   border-radius: 4px;
+  margin-top: 56px;
+  margin-bottom: 32px;
   padding: 8px 50px;
 }
 
@@ -484,35 +545,84 @@ body {
 
 /* catalog cards filter */
 
-.filter-sorting {
-  font-family: "PT Sans", sans-serif;
-  color: #333;
-  background-color: #fff;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-}
 
 .catalog-cards {
   display: flex;
   flex-direction: column;
+  padding: 50px 70px 60px;
 }
 
 .catalog-cards-filter {
   width: 1060px;
   margin: 0 auto;
-
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
+}
+
+.cards-filter-wraper {
+  display: flex;
+}
+
+.button-view-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-title {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
 }
 
+.filter-sorting {
+  font-family: "PT Sans", sans-serif;
+  color: #333;
+  background-color: #fff;
+  border-color: #E5E5E5;
+  border-radius: 4px;
+  border-width: 2px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  width: 292px;
+  height: 49px;
+  padding: 12px 15px;
+}
 /* cards */
+
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 80px;
+  padding: 0;
+}
+
+.cards-item {
+  box-sizing: border-box;
+  width: 340px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 0 2px rgba(230, 230, 230, 1);
+  border-radius: 4px;
+}
+
+.cards-photo {
+  display: block;
+}
+
+.cards-title {
+  margin: 0;
+  padding: 0;
+}
 
 .cards-title-link {
   font-size: 24px;
@@ -522,7 +632,19 @@ body {
   text-decoration: none;
 }
 
+.cards-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
 .read-more {
+  display: block;
+  box-sizing: border-box;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -530,11 +652,15 @@ body {
   color: #fff;
   text-decoration: none;
   background-color: #756157;
-  padding: 8px 27px;
+  padding: 8px 26px;
   border-radius: 4px;
+  min-width: 140px;
+  min-height: 36px;
 }
 
 .favourites {
+  display: block;
+  box-sizing: border-box;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -542,12 +668,18 @@ body {
   color: #fff;
   text-decoration: none;
   background-color: #82B3D3;
-  padding: 8px 27px;
+  padding: 8px 20px;
   border-radius: 4px;
 }
 
 .favourites.current {
   background-color: #7DB54F;
+  padding: 8px 18px;
+}
+
+.hotel-rating {
+  display: flex;
+  justify-content: space-between;
 }
 
 .rating-ball {
@@ -555,25 +687,47 @@ body {
   line-height: 20px;
   color: #333;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.stars {
+  margin: 0;
+  padding: 0;
 }
 
 /* pagination */
 
 .pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
+  list-style-type:  none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
 }
 
 .pagination-link {
   color: #fff;
+  padding: 12px 24px;
+  border-radius: 4px;
   background-color: #82B3D3;
   text-decoration: none;
 }
 
 .pagination-link.current {
   color: #000;
-  background-color: #Ffffff;
+  background-color: #F2F2F2;
 }
 
 .pagination-link.dotted {
