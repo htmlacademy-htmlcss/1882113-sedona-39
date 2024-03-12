@@ -28,14 +28,16 @@
         </div>
         <ul class="user-actions-list">
           <li class="user-actions-item">
-            <a class="user-navigation-link current" href="#">
+            <a class="user-navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
+              <svg class="user-navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18"><path fill="#000" d="m18.5 17.008-3.7-3.68c1-1.292 1.7-2.983 1.7-4.872C16.5 4.08 12.9.5 8.5.5s-8 3.68-8 8.055c0 4.376 3.6 7.956 8 7.956 1.8 0 3.5-.597 4.9-1.69l3.7 3.679 1.4-1.492Zm-10-2.486c-3.3 0-6-2.685-6-5.967 0-3.282 2.7-5.967 6-5.967s6 2.685 6 5.967c0 3.282-2.7 5.967-6 5.967Z"/></svg>
             </a>
           </li>
           <li class="user-actions-item">
             <a class="user-navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
-              <span class="quantity-likes">12</span>
+              <!-- <span class="quantity-likes">12</span> -->
+              <svg class="user-navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none" viewBox="0 0 18 17"><path fill="#000" d="M8.9 17c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9C.4 7.8 0 6.6 0 5.4 0 2.4 2.4 0 5.5 0 6.8 0 8 .5 9 1.3 10 .5 11.3 0 12.5 0c3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/></svg>
             </a>
           </li>
           <li class="user-actions-item">
@@ -52,7 +54,12 @@
         <h1 class="filter-title">Гостиницы Седоны</h1>
         <ol class="breadcrumbs-list">
           <li class="breadcrumbs-item">
-            <a href="index.html">На главную страницу</a>
+            <a class="breadcrumbs-link-home" href="index.html">
+              <svg class="breadcrumbs-icon-home" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="13" height="15" fill="none" viewBox="0 0 13 15"><path fill="#fff" d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z"/><path fill="#fff" d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z"/></svg>
+            </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <div class="breadcrumbs-arrow"></div>
           </li>
           <li class="breadcrumbs-item">
             <a title="Вы находитесь тут">Гостиницы</a>
@@ -98,7 +105,7 @@
                 </label>
               </li>
               <li class="form-bilding-item">
-                <label for="appartament" class="label-text">
+                <label class="label-text" for="appartament">
                   <input type="radio" value="appartement" name="type-bilding" id="appartament">
                     Апартаменты
                 </label>
@@ -108,8 +115,10 @@
           <fieldset class="form-group-price">
             <legend class="form-name">Стоимость, ₽:</legend>
             <div class="price-input-wraper">
-              <input class="price-input-min" type="number" name="price from" value="0" placeholder="0">
-              <input class="price-input-max" type="number" name="price before" value="9000" placeholder="9000">
+              <label class="label-number-min" for="number-min">от</label>
+              <input class="price-input-min" type="number" name="price from" value="0" id="number-min" placeholder="0">
+              <label class="label-number-max" for="number-max">до</label>
+              <input class="price-input-max" type="number" name="price before" value="9000" id="number-max" placeholder="9000">
             </div>
             <input type="range" min="0" max="9000" step="1" value="0">
           </fieldset>
@@ -130,13 +139,13 @@
             </select>
             <ul class="button-view-list">
               <li class="button-view-item  button-view-selected">
-                <a class="view-item-link" href="#">Плитка</a>
+                <a class="view-item-link sorting-plate" href="#"></a>
               </li>
               <li class="button-view-item">
-                <a class="view-item-link" href="#">Слайд шоу</a>
+                <a class="view-item-link sorting-slideshow" href="#"></a>
               </li>
-              <li class="button-view-item">
-                <a class="view-item-link href=#">Списком</a>
+              <li class="button-view-item sorting-list" href="#">
+                <a class="view-item-link href=#"></a>
               </li>
             </ul>
           </div>
