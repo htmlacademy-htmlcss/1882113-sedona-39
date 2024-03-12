@@ -484,6 +484,7 @@ body {
   background-color: #82B3D3;
   border: none;
   padding: 8px 50px;
+  display: inline-block;
 }
 
 /* footer */
