@@ -1010,6 +1010,7 @@ input[type=range]::-moz-range-track {
 }
 
 .cards-title {
+  font-size: 24px;
   margin: 0;
   padding: 0;
 }
@@ -1023,17 +1024,32 @@ input[type=range]::-moz-range-track {
   text-decoration: none;
 }
 
-.cards-price {
-  grid-column: 1/-1;
-  display: flex;
-  justify-content: space-between;
+.hotel {
+  grid-column: 1/2;
 }
 
-.cards-actions {
-  grid-column: 1/-1;
-  display: flex;
-  justify-content: space-between;
+.from {
+  grid-column: 2/3;
+  justify-self: end;
 }
+
+.read-more {
+  grid-column: 1/2;
+}
+
+.favourites {
+  grid-column: 2/3;
+}
+
+.stars {
+  grid-column: 1/2;
+}
+
+.rating-ball {
+  grid-column: 2/3;
+  justify-self: end;
+}
+
 
 .read-more {
   display: block;
@@ -1070,24 +1086,43 @@ input[type=range]::-moz-range-track {
   padding: 8px 18px;
 }
 
-.hotel-rating {
-  grid-column: 1/-1;
-  display: flex;
-  justify-content: space-between;
-}
 
 .rating-ball {
   font-size: 16px;
   line-height: 20px;
   color: #333;
+  background-color: #F2F2F2;
   text-transform: uppercase;
+  padding: 9px 22px 8px 23px;
+  border-radius: 4px;
   margin: 0;
-  padding: 0;
 }
 
 .stars {
   margin: 0;
   padding: 0;
+}
+
+.stars::before {
+  content: "";
+  display: block;
+  height: 17px;
+  margin: 10px 0;
+  background-image: url(../images/ball-stars.svg);
+  background-repeat: space no-repeat;
+  background-size: contain;
+}
+
+.quantity-stars_4 {
+  width: 78px;
+}
+
+.quantity-stars_3 {
+  width: 65px;
+}
+
+.quantity-stars_2  {
+  width: 43px;
 }
 
 /* pagination */
