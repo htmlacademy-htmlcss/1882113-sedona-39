@@ -979,6 +979,17 @@ input[type=range]::-moz-range-track {
   margin: 0;
   margin-bottom: 80px;
   padding: 0;
+  position: relative;
+}
+
+.cards-list::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  width: 1060px;
+  height: 1px;
+  background-color: #E6E6E6;
+
 }
 /* на флексах */
 /* .cards-item {
