@@ -104,6 +104,20 @@ body {
   padding: 22px 12px;
 }
 
+.quantity-likes {
+  position: absolute;
+  top: 11px;
+  right: 4px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  color: #fff;
+  padding: 5px;
+  background-color: #7DB54F;
+  border-radius: 50%;
+  z-index: 1;
+}
+
 /* .user-actions-item:nth-child(1) .user-navigation-link {
   display: block;
   padding: 22px 12px;
@@ -642,16 +656,17 @@ body {
   background-color: #E5E5E5;
 }
 
-.breadcrumbs-link-home:hover .breadcrumbs-icon-home {
-  fill: rgba(255, 255, 255, 0.6);
+ .breadcrumbs-item a:hover {
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.breadcrumbs-link-home:focus .breadcrumbs-icon-home {
-  fill: rgba(255, 255, 255, 0.6);
+.breadcrumbs-item a:focus {
+  color: rgba(255, 255, 255, 0.6);
+  outline: none;
 }
 
-.breadcrumbs-link-home:active .breadcrumbs-icon-home {
-  fill: rgba(255, 255, 255, 0.3);
+.breadcrumbs-item a:active{
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-social-link:hover .social-icon{
@@ -752,6 +767,11 @@ body {
   background-image: url(../images/bread_crumbs_arrow.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.breadcrumbs-item a {
+  color: #F2F2F2;
+  text-decoration: none;
 }
 
 .catalog-form-filter {
