@@ -70,21 +70,24 @@
             <legend class="form-name">Инфраструктура:</legend>
             <ul class="form-infrastructure-list">
               <li class="form-infrastructure-item">
-                <label for="pool" class="label-text">
-                  <input type="checkbox" name="Бассейн" id="pool" checked>
-                  Бассейн
+                <label class="label-text" for="pool">
+                  <input class="visually-hidden control-input" type="checkbox" name="Бассейн" id="pool" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Бассейн</span>
                 </label>
               </li>
               <li class="form-infrastructure-item">
-                <label for="parking" class="label-text">
-                  <input type="checkbox" name="Парковка" id="parking" checked>
-                  Парковка
+                <label class="label-text" for="parking">
+                  <input class="visually-hidden control-input" type="checkbox" name="Парковка" id="parking" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Парковка</span>
                 </label>
               </li>
               <li class="form-infrastructure-item">
-                <label for="wi-fi" class="label-text">
-                  <input type="checkbox" id="wi-fi" name="Wi-Fi">
-                  Wi-Fi
+                <label class="label-text" for="wi-fi">
+                  <input class="visually-hidden control-input" type="checkbox" id="wi-fi" name="Wi-Fi">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Wi-Fi</span>
                 </label>
               </li>
             </ul>
@@ -94,20 +97,23 @@
             <ul class="form-bilding-list">
               <li class="form-bilding-item">
                 <label for="hotel" class="label-text">
-                  <input type="radio" value="hotel" name="type-bilding" id="hotel" checked>
-                  Гостиница
+                  <input class="visually-hidden control-input" type="radio" value="hotel" name="type-bilding" id="hotel" checked>
+                  <span class="control-mark-radio"></span>
+                  <span class="control-label">Гостиница</span>
                 </label>
               </li>
               <li class="form-bilding-item">
                 <label for="motel" class="label-text">
-                  <input type="radio" value="motel" name="type-bilding" id="motel">
-                  Мотель
+                  <input class="visually-hidden control-input" type="radio" value="motel" name="type-bilding" id="motel">
+                  <span class="control-mark-radio"></span>
+                  <span class="control-label">Мотель</span>
                 </label>
               </li>
               <li class="form-bilding-item">
                 <label class="label-text" for="appartament">
-                  <input type="radio" value="appartement" name="type-bilding" id="appartament">
-                    Апартаменты
+                  <input class="visually-hidden control-input" type="radio" value="appartement" name="type-bilding" id="appartament">
+                  <span class="control-mark-radio"></span>
+                  <span class="control-label">Апартаменты</span>
                 </label>
               </li>
             </ul>
@@ -115,12 +121,21 @@
           <fieldset class="form-group-price">
             <legend class="form-name">Стоимость, ₽:</legend>
             <div class="price-input-wraper">
-              <label class="label-number-min" for="number-min">от</label>
-              <input class="price-input-min" type="number" name="price from" value="0" id="number-min" placeholder="0">
-              <label class="label-number-max" for="number-max">до</label>
-              <input class="price-input-max" type="number" name="price before" value="9000" id="number-max" placeholder="9000">
+              <label class="label-number-min" for="number-min">
+                <span class="label-number-text">от</span>
+                <input class="price-input-min" type="number" name="min-price" value="0" id="number-min" placeholder="0">
+              </label>
+              <label class="label-number-max" for="number-max">
+                <span class="label-nimber-text">до</span>
+                <input class="price-input-max" type="number" name="max-price" value="9000" id="number-max" placeholder="9000">
+              </label>
             </div>
-            <input type="range" min="0" max="9000" step="1" value="0">
+            <div class="range-scale">
+              <div class="range-bar" style="left: 0; width: 226px;">
+                <button class="range-toggle toggle-min" type="button"></button>
+                <button class="range-toggle toggle-max" type="button"></button>
+              </div>
+            </div>
           </fieldset>
           <div class="form-actions-button">
             <button type="submit" class="filter-button-submit">Применить</button>
