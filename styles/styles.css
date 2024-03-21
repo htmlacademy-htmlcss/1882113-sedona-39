@@ -118,26 +118,6 @@ body {
   z-index: 1;
 }
 
-/* .user-actions-item:nth-child(1) .user-navigation-link {
-  display: block;
-  padding: 22px 12px;
-  background-image: url(../images/serch.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  min-width: 20px;
-  min-height: 20px;
-}
-
-.user-actions-item:nth-child(2) .user-navigation-link {
-  display: block;
-  padding: 22px 12px;
-  background-image: url(../images/likes.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-} */
-
 .user-navigation-icon {
   position: absolute;
   top: 0;
@@ -584,6 +564,15 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.user-button:not([href]),
+.search-link:not([href]),
+.read-more:not([href]),
+.favourites.current:not([href]),
+.search-link:not([href]) {
+  background-color: #E5E5E5;
+  color: #fff;
+}
+
 .favourites.current:hover {
   background-color: #6C9E42;
 }
@@ -643,11 +632,14 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.subscrible-button:disabled:hover {
+.subscrible-button:disabled,
+.subscrible-button:disabled:active {
   background-color: #E5E5E5;
+  color: #fff;
 }
 
- .breadcrumbs-item a:hover {
+
+.breadcrumbs-item a:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -869,6 +861,14 @@ body {
   opacity: 0.3;
 }
 
+/* .control-mark:active {
+  opacity: 0.3;
+}
+
+.control-label:active {
+  opacity: 0.3;
+} */
+
 .control-input[type="checkbox"]:focus-visible + .control-mark {
   content: "";
   position: absolute;
@@ -928,6 +928,19 @@ body {
   top: 5px;
   left: 5px;
   border-radius: 50%;
+}
+
+.control-mark-radio:hover {
+  opacity: 0.6;
+}
+
+.control-mark-radio:active {
+  opacity: 0.6;
+}
+
+.control-input:disabled ~ .control-mark-radio,
+.control-input:disabled ~ .control-label {
+  opacity: 0.3;
 }
 
 .price-input-wraper {
@@ -1355,16 +1368,24 @@ body {
   background-size: contain;
 }
 
+.quantity-stars_5 {
+  width: 107px;
+}
+
 .quantity-stars_4 {
-  width: 78px;
+  width: 89px;
 }
 
 .quantity-stars_3 {
-  width: 65px;
+  width: 66px;
 }
 
 .quantity-stars_2  {
   width: 43px;
+}
+
+.quantity-stars_1  {
+  width: 34px;
 }
 
 /* pagination */
