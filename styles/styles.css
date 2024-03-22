@@ -525,7 +525,7 @@ body {
 }
 
 .phone-wraper {
-  width: 331px;
+  width: 333px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -982,6 +982,11 @@ body {
   appearance: none;
   margin: 0;
 }
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 
 .price-input-min {
   margin-right: 2px;
