@@ -96,6 +96,15 @@ body {
   position: relative;
 }
 
+.navigation-link:hover {
+  color: #615048;
+}
+
+.navigation-link:active {
+  color: #615048;
+  opacity: 0.6;
+}
+
 .user-navigation-link {
   display:block;
   position: relative;
@@ -108,11 +117,11 @@ body {
   fill: #000;
 }
 
-.user-navigation-link:hover  .user-navigation-icon{
+.user-navigation-link:hover  .user-navigation-icon {
   fill: #615048;
 }
 
-.user-navigation-link:active  .user-navigation-icon{
+.user-navigation-link:active  .user-navigation-icon {
   fill: #615048;
   opacity: 0.3;
 }
@@ -726,6 +735,15 @@ body {
 
 .logo-link {
   margin-bottom: -7px;
+  z-index: 1;
+}
+
+.logo-link:hover {
+  opacity: 0.6;
+}
+
+.logo-link:active {
+  opacity: 0.3;
 }
 
 .catalog-filter {
