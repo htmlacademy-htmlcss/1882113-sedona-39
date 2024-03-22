@@ -602,15 +602,25 @@ body {
 .subscrible-button:hover,
 .filter-button-submit:hover,
 .favourites:hover,
-.pagination-link:hover {
+.pagination-link:hover,
+.submit-booking-btn:hover {
   background-color: #68A2CA;
 }
 
 .subscrible-button:focus,
 .filter-button-submit:focus,
 .favourites:focus,
-.pagination-link:focus {
+.pagination-link:focus,
+.submit-booking-btn:focus {
   background-color: #68A2CA;
+}
+
+.submit-booking-btn:focus {
+  outline: none;
+}
+
+.submit-booking-btn:focus-visible {
+  outline: 3px solid #83B3D3;
 }
 
 .pagination-link:focus {
@@ -620,7 +630,8 @@ body {
 .subscrible-button:active,
 .filter-button-submit:active,
 .favourites:active,
-.pagination-link:active {
+.pagination-link:active,
+.submit-booking-btn:active {
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -1449,9 +1460,9 @@ body {
   display: flex;
 }
 /* ////////////////////// */
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 /* ///////////////////// */
 .modal {
   position: relative;
@@ -1593,6 +1604,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
+  padding: 0 35px;
 }
 
 .number-adalts::-webkit-inner-spin-button,
