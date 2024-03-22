@@ -104,6 +104,19 @@ body {
   padding: 22px 12px;
 }
 
+.user-navigation-icon {
+  fill: #000;
+}
+
+.user-navigation-link:hover  .user-navigation-icon{
+  fill: #615048;
+}
+
+.user-navigation-link:active  .user-navigation-icon{
+  fill: #615048;
+  opacity: 0.3;
+}
+
 .quantity-likes {
   position: absolute;
   top: 11px;
@@ -632,8 +645,14 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.filter-button-reset:disabled,
+.filter-button-reset:disabled:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .subscrible-button:disabled,
-.subscrible-button:disabled:active {
+.subscrible-button:disabled:active,
+.filter-button-submit:disabled {
   background-color: #E5E5E5;
   color: #fff;
 }
@@ -861,13 +880,9 @@ body {
   opacity: 0.3;
 }
 
-/* .control-mark:active {
+.label-text:has(input[disabled]) {
   opacity: 0.3;
 }
-
-.control-label:active {
-  opacity: 0.3;
-} */
 
 .control-input[type="checkbox"]:focus-visible + .control-mark {
   content: "";
@@ -928,19 +943,6 @@ body {
   top: 5px;
   left: 5px;
   border-radius: 50%;
-}
-
-.control-mark-radio:hover {
-  opacity: 0.6;
-}
-
-.control-mark-radio:active {
-  opacity: 0.6;
-}
-
-.control-input:disabled ~ .control-mark-radio,
-.control-input:disabled ~ .control-label {
-  opacity: 0.3;
 }
 
 .price-input-wraper {
