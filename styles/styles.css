@@ -1514,7 +1514,9 @@ input[type="number"] {
   overflow: scroll;
   height: 100px;
 }
-
+.input-wraper {
+  position: relative;
+}
 .tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
