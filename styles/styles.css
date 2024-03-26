@@ -1262,9 +1262,9 @@ input[type="number"] {
   display: flex;
 }
 /* Модальное окно */
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 /* ///////////////////// */
 .modal {
   position: relative;
@@ -1334,6 +1334,11 @@ input[type="number"] {
   line-height: 24px;
   text-transform: capitalize;
   position: relative;
+}
+.form-label {
+  padding-right: 46px;
+  display: flex;
+  align-items: center;
 }
 .fild-booking-date {
   box-sizing: border-box;
@@ -1453,7 +1458,7 @@ input[type="number"] {
   text-transform: uppercase;
 }
 .tooltip {
-  position: absolute;
+  display: block;
 }
 .tooltip-toggle {
   display: block;
