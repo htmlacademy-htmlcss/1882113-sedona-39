@@ -1320,6 +1320,7 @@ input[type="number"] {
 }
 .quantity-human-wraper {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   column-gap: 20px;
 }
