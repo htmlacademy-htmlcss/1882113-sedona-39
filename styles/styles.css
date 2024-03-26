@@ -1475,7 +1475,7 @@ input[type="number"] {
   display: block;
   width: 100%;
 }
-.tooltip-text {
+.tooltip-text-wrpaer {
   display: none;
   box-sizing: border-box;
   position: absolute;
@@ -1492,6 +1492,29 @@ input[type="number"] {
   z-index: 1;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
 }
+.tooltip-text {
+  display: none;
+  box-sizing: border-box;
+  position: absolute;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 20px;
+  padding: 19px 18px 21px 22px;
+  width: 256px;
+  border-radius: 10px;
+  transform: translateX(-104px) translateY(15px);
+  z-index: 1;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
+}
+.text-wraper {
+  display: block;
+  overflow: scroll;
+  height: 100px;
+}
+
 .tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
