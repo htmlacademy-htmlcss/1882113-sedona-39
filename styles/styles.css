@@ -1282,9 +1282,9 @@ input[type="number"] {
   display: flex;
 }
 /* Модальное окно */
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 /* ///////////////////// */
 .modal {
   position: relative;
@@ -1532,7 +1532,7 @@ input[type="number"] {
   font-weight: 400;
   text-transform: none;
   line-height: 20px;
-  padding: 15px 18px 18px 22px;
+  padding: 19px 18px 24px 22px;
   width: 256px;
   border-radius: 10px;
   transform: translateX(-104px) translateY(15px);
@@ -1541,10 +1541,7 @@ input[type="number"] {
 }
 .text-wraper {
   display: block;
-  min-width: 216px;
-  min-height: 110px;
-  max-height: 200px;
-  overflow: scroll;
+  width: 216px;
 }
 .input-wraper {
   position: relative;
