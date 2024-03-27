@@ -189,9 +189,11 @@ img {
 }
 /* sections advantages */
 .advantages-description-wraper {
-  width: 651px;
-  padding: 69px 0;
-  margin: 0 auto 21px;
+  display: flex;
+  flex-direction: column;
+  padding: 69px 272px;
+  align-items: center;
+  margin-bottom: 21px;
 }
 .section-title {
   font-size: 30px;
@@ -232,7 +234,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 102px 85px;
+  padding: 102px 84px;
   min-width: 230px;
   min-height: 181px;
 
@@ -389,10 +391,10 @@ img {
   background-repeat: no-repeat;
 }
 .subscrible-wraper {
-  width: 684px;
-  margin: 0 auto;
-  padding-top: 96px;
-  padding-bottom: 104px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px 258px 104px;
 }
 .subscrible-wraper .section-title {
   margin-bottom: 20px;
@@ -436,8 +438,6 @@ img {
 /* footer */
 .footer-wraper {
   width: 1060px;
-  margin: 40px auto 30px;
-
   display: flex;
   justify-content: space-between;
 }
@@ -495,6 +495,9 @@ img {
   margin: auto;
   fill: #000000;
 
+}
+.footer {
+  padding: 40px 70px 30px;
 }
 /* hover buttons */
 .user-button:hover,
@@ -663,6 +666,9 @@ img {
 .breadcrumbs-item {
   position: relative;
 }
+.breadcrumbs-item:last-child a {
+  margin: 0;
+}
 .breadcrumbs-item::after {
   content: "";
   position: absolute;
@@ -733,6 +739,7 @@ img {
 }
 .form-actions-button {
   width: 191px;
+  padding-top: 56px;
 }
 .form-name {
   font-size: 20px;
@@ -952,7 +959,6 @@ input[type="number"] {
   font-family: inherit;
   border: none;
   border-radius: 4px;
-  margin-top: 56px;
   margin-bottom: 32px;
   padding: 8px 50px;
 }
