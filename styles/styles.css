@@ -1196,13 +1196,12 @@ input[type="number"] {
 }
 .stars {
   margin: 0;
-  padding: 0;
+  padding: 10px 0;
 }
 .stars::before {
   content: "";
   display: block;
   height: 17px;
-  margin: 10px 0;
   background-image: url("../images/ball-stars.svg");
   background-repeat: space no-repeat;
   background-size: contain;
@@ -1277,9 +1276,9 @@ input[type="number"] {
   display: flex;
 }
 /* Модальное окно */
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
 /* ///////////////////// */
 .modal {
   position: relative;
@@ -1577,16 +1576,10 @@ input[type="number"] {
   background-color: #E6E6E6;
 }
 .fild-booking-date:focus {
-  outline: none;
-  background-color: #F2F2F2;
-}
-.fild-booking-date:focus:not(:focus-visible) {
-  outline: none;
-  background-color: #F2F2F2;
-}
-.fild-booking-date:focus-visible {
-  outline: 3px solid #83B3D3;
   background-color: #E6E6E6;
+}
+.fild-booking-date:not(:placeholder-shown) {
+  background-color: #F2F2F2;
 }
 .fild-error {
   color: #FF5757;
