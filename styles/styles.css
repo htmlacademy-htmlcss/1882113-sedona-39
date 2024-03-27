@@ -1276,9 +1276,9 @@ input[type="number"] {
   display: flex;
 }
 /* Модальное окно */
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 /* ///////////////////// */
 .modal {
   position: relative;
