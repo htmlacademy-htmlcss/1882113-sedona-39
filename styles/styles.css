@@ -177,10 +177,10 @@ img {
 .hero {
   padding-top: 51px;
   padding-bottom: 82px;
-  background-image: url("../images/index_background.jpg");
+  background-image: url("../images/index-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #82B3D3;
+  background-color: #2d566f;
   clip-path: polygon(50% 0%, 100% 0, 100% 88%, 79% 93.5%, 79% 88.5%, 50% 100%, 21% 88.5%, 21% 93.5%, 0 88%, 0 0);
 }
 .welcome-image {
@@ -218,7 +218,7 @@ img {
   flex-wrap: wrap;
 }
 .advantages-item {
-  background-color: #83B3D31F;
+  background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
 }
 .advantages-background {
@@ -270,7 +270,7 @@ img {
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
-  background-image: url("../images/advantage_icon1.svg");
+  background-image: url("../images/advantage-icon1.svg");
   background-repeat: no-repeat;
   width: 75px;
   height: 72px;
@@ -280,7 +280,7 @@ img {
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
-  background-image: url("../images/advantage_icon2.svg");
+  background-image: url("../images/advantage-icon2.svg");
   background-repeat: no-repeat;
   width: 75px;
   height: 72px;
@@ -290,7 +290,7 @@ img {
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
-  background-image: url("../images/advantage_icon3.svg");
+  background-image: url("../images/advantage-icon3.svg");
   background-repeat: no-repeat;
   width: 75px;
   height: 72px;
@@ -301,8 +301,11 @@ img {
 .invitation-item-wraper .advantages-description {
   margin-top: 0;
 }
-.background-modified {
-  background-color: #83B3D333;
+.advantages-list .background-modified {
+  background-color: rgba(131, 179, 211, 0.2)
+}
+.advantages-invitation-list .background-modified {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 .advantages-title {
   font-size: 24px;
@@ -377,11 +380,11 @@ img {
 }
 /* subscrible-section */
 .subscrible {
-  background-color: #82B3D3;
+  background-color: #2d566f;
   color: #ffffff;
 }
 .subscrible.background {
-  background-image: url("../images/subscribe_background.jpg");
+  background-image: url("../images/subscribe-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -427,6 +430,7 @@ img {
   background-color: #82B3D3;
   border: none;
   padding: 8px 50px;
+  border-radius: 0 4px 4px 0;
   display: inline-block;
 }
 /* footer */
@@ -634,8 +638,8 @@ img {
   opacity: 0.3;
 }
 .catalog-filter {
-  background-color: #82B3D3;
-  background-image: url("../images/filter_background.jpg");
+  background-color: #2d566f;
+  background-image: url("../images/filter-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
@@ -666,7 +670,7 @@ img {
   right: 10px;
   width: 7px;
   height: 10px;
-  background-image: url("../images/bread_crumbs_arrow.svg");
+  background-image: url("../images/bread-crumbs-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -770,8 +774,18 @@ img {
 .label-text:hover {
   opacity: 0.6;
 }
+.label-text:hover .control-mark,
+.label-text:hover .control-mark-radio {
+  opacity: 0.6;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
 .label-text:active {
   opacity: 0.3;
+}
+.label-text:active .control-mark,
+.label-text:active .control-mark-radio {
+  opacity: 0.3;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .label-text:has(input[disabled]) {
   opacity: 0.3;
@@ -783,6 +797,7 @@ img {
   height: 20px;
   outline: 3px solid #83B3D3;
   border-radius: 4px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .control-input[type="checkbox"]:checked + .control-mark::before,
 .control-input[type="checkbox"]:checked + .control-mark::after {
@@ -1009,17 +1024,17 @@ input[type="number"] {
   outline: none;
 }
 .sorting-plate {
-  background-image: url("../images/sorting_plate.svg");
+  background-image: url("../images/sorting-plate.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 .sorting-slideshow {
-  background-image: url("../images/sorting_slideshow.svg");
+  background-image: url("../images/sorting-slideshow.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 .sorting-list{
-  background-image: url("../images/sorting_list.svg");
+  background-image: url("../images/sorting-list.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1045,7 +1060,7 @@ input[type="number"] {
   padding-right: 35px;
   margin-right: 70px;
   appearance: none;
-  background-image: url("../images/down_arrow.svg");
+  background-image: url("../images/down-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
 }
@@ -1181,13 +1196,12 @@ input[type="number"] {
 }
 .stars {
   margin: 0;
-  padding: 0;
+  padding: 10px 0;
 }
 .stars::before {
   content: "";
   display: block;
   height: 17px;
-  margin: 10px 0;
   background-image: url("../images/ball-stars.svg");
   background-repeat: space no-repeat;
   background-size: contain;
@@ -1313,6 +1327,15 @@ input[type="number"] {
   padding: 0;
   margin: 0;
 }
+.fild-group-quantity {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 46px;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -1353,7 +1376,7 @@ input[type="number"] {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  padding: 12px 20px;
+  padding: 12px 37px 12px 20px;
 }
 .fild-booking-date::placeholder {
   opacity: 0.6;
@@ -1503,7 +1526,7 @@ input[type="number"] {
   font-weight: 400;
   text-transform: none;
   line-height: 20px;
-  padding: 19px 18px 21px 22px;
+  padding: 15px 18px 18px 22px;
   width: 256px;
   border-radius: 10px;
   transform: translateX(-104px) translateY(15px);
@@ -1512,8 +1535,10 @@ input[type="number"] {
 }
 .text-wraper {
   display: block;
+  min-width: 216px;
+  min-height: 110px;
+  max-height: 200px;
   overflow: scroll;
-  height: 100px;
 }
 .input-wraper {
   position: relative;
@@ -1551,8 +1576,10 @@ input[type="number"] {
   background-color: #E6E6E6;
 }
 .fild-booking-date:focus {
-  outline: 3px solid #83B3D3;
   background-color: #E6E6E6;
+}
+.fild-booking-date:not(:placeholder-shown) {
+  background-color: #F2F2F2;
 }
 .fild-error {
   color: #FF5757;
