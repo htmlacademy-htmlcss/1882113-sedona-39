@@ -1210,7 +1210,7 @@ input[type="number"] {
   height: 17px;
   background-image: url("../images/ball-stars.svg");
   background-repeat: space no-repeat;
-  background-size: contain;
+  background-size: auto;
 }
 .quantity-stars_5 {
   width: 107px;
