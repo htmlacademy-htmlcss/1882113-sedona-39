@@ -181,6 +181,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #2d566f;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 88%, 79% 93.5%, 79% 88.5%, 50% 100%, 21% 88.5%, 21% 93.5%, 0 88%, 0 0);
   clip-path: polygon(50% 0%, 100% 0, 100% 88%, 79% 93.5%, 79% 88.5%, 50% 100%, 21% 88.5%, 21% 93.5%, 0 88%, 0 0);
 }
 .welcome-image {
@@ -879,6 +880,7 @@ img {
 }
 .price-input-min::-webkit-inner-spin-button,
 .price-input-max::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
@@ -1078,6 +1080,7 @@ input[type="number"] {
   padding: 12px 15px;
   padding-right: 35px;
   margin-right: 70px;
+  -webkit-appearance: none;
   appearance: none;
   background-image: url("../images/down-arrow.svg");
   background-repeat: no-repeat;
@@ -1444,6 +1447,7 @@ input[type="number"] {
 }
 .number-adalts::-webkit-inner-spin-button,
 .number-children::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
