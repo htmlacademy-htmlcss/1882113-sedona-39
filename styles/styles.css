@@ -413,13 +413,22 @@ img {
   line-height: 24px;
   width: 452px;
   border: none;
-  background-color: #f2f2f2;
+  background-color: #F2F2F2;
   padding: 12px 20px;
   border-radius: 4px 0 0 4px;
 }
 .input-email::placeholder {
   color: #000000;
   opacity: 0.6;
+}
+.input-email:hover {
+  background-color: #E6E6E6;
+}
+.input-email:focus {
+  background-color: #E6E6E6;
+}
+.input-email:not(:placeholder-shown) {
+  background-color: #F2F2F2;
 }
 .subscrible-button {
   width: 232px;
@@ -784,7 +793,6 @@ img {
 .label-text:hover .control-mark,
 .label-text:hover .control-mark-radio {
   opacity: 0.6;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .label-text:active {
   opacity: 0.3;
@@ -792,7 +800,6 @@ img {
 .label-text:active .control-mark,
 .label-text:active .control-mark-radio {
   opacity: 0.3;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .label-text:has(input[disabled]) {
   opacity: 0.3;
@@ -804,7 +811,6 @@ img {
   height: 20px;
   outline: 3px solid #83B3D3;
   border-radius: 4px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .control-input[type="checkbox"]:checked + .control-mark::before,
 .control-input[type="checkbox"]:checked + .control-mark::after {
@@ -937,9 +943,16 @@ input[type="number"] {
   border-radius: 4px;
   cursor: pointer;
 }
-.range-toggle:focus,
-.range-toggle:active {
+.range-toggle:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+.range-toggle:focus {
   outline: 3px solid #83B3D3;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+.range-toggle:active {
+  outline: 2px solid #83B3D3;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.40);
 }
 .toggle-min {
   top: -8px;
